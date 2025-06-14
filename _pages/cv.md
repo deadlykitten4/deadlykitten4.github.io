@@ -1,6 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
+redirect: /assets/pdf/Haolei_CV.pdf
 title: CV
 nav: true
 nav_order: 5

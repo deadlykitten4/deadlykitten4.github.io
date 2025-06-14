@@ -2,11 +2,11 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://en.westlake.edu.cn/'>Westlake University</a>
+# subtitle: <a href='https://en.westlake.edu.cn/'>Westlake University</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: haolei.jpg
   image_circular: false # crops the image to make it circular
 #  more_info: >
 #    <p>555 your office number</p>
