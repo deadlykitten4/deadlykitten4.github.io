@@ -190,7 +190,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _news/
   - _pages/blog.md
   - _posts/
   - _projects/?_project.md
