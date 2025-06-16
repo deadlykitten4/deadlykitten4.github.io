@@ -50,7 +50,18 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{
+            },},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-i-joined-encode-lab-at-westlake-university-as-a-visiting-student",
+          title: 'I joined ENCODE Lab at Westlake University as a visiting student! 🔥',
+          description: "",
+          section: "News",},{id: "news-i-graduated-from-nanyang-technological-university",
+          title: 'I graduated from Nanyang Technological University! 🎉',
+          description: "",
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
