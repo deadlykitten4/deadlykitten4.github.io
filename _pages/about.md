@@ -22,9 +22,9 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 1 # leave blank to include all the blog posts
 ---
 
 👋 Hi, there. I am Haolei Bai (Chinese name: 白浩磊), currently a visiting student at ENCODE Lab, [Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Huan Wang](https://huanwang.tech/). Prior to that, I got my M.S. in Signal Processing at [Nanyang Technological University](https://www.ntu.edu.sg/), fortune to be advised by [Prof. Alex Kot](https://personal.ntu.edu.sg/eackot/).
