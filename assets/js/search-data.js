@@ -68,14 +68,14 @@ ninja.data = [{
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/https://github.com/deadlykitten4", "_blank");
+          window.open("https://github.com/deadlykitten4", "_blank");
         },
       },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/https://www.linkedin.com/in/haolei-bai-b7b185290/", "_blank");
+          window.open("https://www.linkedin.com/in/haolei-bai-b7b185290", "_blank");
         },
       },{
         id: 'social-scholar',
