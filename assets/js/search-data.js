@@ -9,21 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications-amp-preprints",
-          title: "Publications &amp; Preprints",
-          description: "publications by categories in reversed chronological order.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Curriculum vitae of Haolei Bai.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/assets/pdf/Haolei_CV.pdf";
-          },
-        },{
+  },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
