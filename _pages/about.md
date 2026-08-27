@@ -27,7 +27,6 @@ latest_posts:
   limit: 1 # leave blank to include all the blog posts
 ---
 
-👋 Hi, there. I am Haolei Bai (Chinese name: 白浩磊), currently a visiting student at ENCODE Lab, [Westlake University](https://en.westlake.edu.cn/), advised by [Prof. Huan Wang](https://huanwang.tech/). Prior to that, I got my M.S. in Signal Processing at [Nanyang Technological University](https://www.ntu.edu.sg/), fortune to be advised by [Prof. Alex Kot](https://personal.ntu.edu.sg/eackot/).
+👋 Hi! I’m Haolei Bai, a first-year Ph.D. student advised by [Prof. Zhiqiang Tao](https://ztao.cc/). Previously, I was a visiting student at the [ENCODE Lab](https://westlake-encode-lab.github.io/), Westlake University, where I was fortunate to be advised by [Prof. Huan Wang](https://huanwang.tech/). Before that, I earned my M.S. in Signal Processing from Nanyang Technological University, under the supervision of [Prof. Alex Kot](https://personal.ntu.edu.sg/eackot/).
 
-I'm interested in Efficient AI (LLMs/VLMs) and Diffusion Language Models (dLLMs).
-
+My research interests include efficient AI, particularly large language models (LLMs), vision-language models (VLMs), and diffusion language models (dLLMs). I am currently exploring topics related to autonomous driving.

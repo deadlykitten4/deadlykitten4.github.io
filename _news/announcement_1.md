@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I joined ENCODE Lab at [Westlake University](https://en.westlake.edu.cn/) as a visiting student! 🔥
+Joined [ENCODE Lab](https://westlake-encode-lab.github.io/) at Westlake University as a visiting student.

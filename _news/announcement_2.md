@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I graduated from [Nanyang Technological University](https://www.ntu.edu.sg/)! 🎉
+Graduated from Nanyang Technological University.
