@@ -27,6 +27,6 @@ latest_posts:
   limit: 1 # leave blank to include all the blog posts
 ---
 
-👋 Hi! I’m Haolei Bai, a first-year Ph.D. student advised by [Prof. Zhiqiang Tao](https://ztao.cc/). Previously, I was a visiting student at the [ENCODE Lab](https://westlake-encode-lab.github.io/), Westlake University, where I was fortunate to be advised by [Prof. Huan Wang](https://huanwang.tech/). Before that, I earned my M.S. in Signal Processing from Nanyang Technological University, under the supervision of [Prof. Alex Kot](https://personal.ntu.edu.sg/eackot/).
+👋 Hi! I’m Haolei Bai, a first-year Ph.D. student at Rochester Institute of Technology, advised by [Prof. Zhiqiang Tao](https://ztao.cc/). Previously, I was a visiting student at the [ENCODE Lab](https://westlake-encode-lab.github.io/), Westlake University, where I was fortunate to be advised by [Prof. Huan Wang](https://huanwang.tech/). Before that, I earned my M.S. in Signal Processing from Nanyang Technological University, under the supervision of [Prof. Alex Kot](https://personal.ntu.edu.sg/eackot/).
 
 My research interests include efficient AI, particularly large language models (LLMs), vision-language models (VLMs), and diffusion language models (dLLMs). I am currently exploring topics related to autonomous driving.

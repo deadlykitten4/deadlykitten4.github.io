@@ -1,0 +1,18 @@
+<div class="site-utilities" aria-label="Site utilities">
+  <a
+    class="cv-utility-link"
+    href="{{ '/assets/pdf/Haolei_CV.pdf' | relative_url }}"
+    target="_blank"
+    rel="noopener"
+    aria-label="Open Haolei Bai's CV in a new tab"
+  >
+    CV <span aria-hidden="true">↗</span>
+  </a>
+  {% if site.enable_darkmode %}
+    <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+      <i class="ti ti-sun-moon" id="light-toggle-system" aria-hidden="true"></i>
+      <i class="ti ti-moon-filled" id="light-toggle-dark" aria-hidden="true"></i>
+      <i class="ti ti-sun-filled" id="light-toggle-light" aria-hidden="true"></i>
+    </button>
+  {% endif %}
+</div>
