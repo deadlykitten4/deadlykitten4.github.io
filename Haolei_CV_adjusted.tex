@@ -1,0 +1,408 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Page geometry
+\usepackage[
+    ignoreheadfoot,
+    top=2cm,
+    bottom=2cm,
+    left=2cm,
+    right=2cm,
+    footskip=1cm
+]{geometry}
+
+% Typography and layout
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{needspace}
+\usepackage{etoolbox}
+\usepackage{iftex}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage{charter}
+
+% Icons and links
+\usepackage{fontawesome5}
+\usepackage{academicons}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[
+    pdftitle={Haolei Bai's CV},
+    pdfauthor={Haolei Bai},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true
+]{hyperref}
+\usepackage{bookmark}
+
+% Make the PDF machine-readable and ATS-friendly under pdfLaTeX.
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Colors
+\definecolor{primaryColor}{RGB}{0,0,0}
+\definecolor{linkBlue}{RGB}{21,101,192}
+
+\hypersetup{
+    linkcolor=linkBlue,
+    citecolor=linkBlue,
+    urlcolor=linkBlue
+}
+
+% Global document settings
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+% Section hierarchy: 12.5 pt, bold, small caps.
+\titleformat{\section}
+    {\needspace{4\baselineskip}\fontsize{12.5pt}{15pt}\selectfont\bfseries\scshape}
+    {}
+    {0pt}
+    {}
+    [\vspace{1pt}\titlerule]
+
+\titlespacing{\section}
+    {-1pt}
+    {0.30cm}
+    {0.18cm}
+
+% Reusable text hierarchy.
+\newcommand{\institution}[1]{%
+    {\fontsize{10.8pt}{13pt}\selectfont\bfseries #1}%
+}
+
+\newcommand{\entrydate}[1]{%
+    {\small\itshape #1}%
+}
+
+\newcommand{\advisor}[1]{%
+    {\small\itshape Advisor: #1}%
+}
+
+\newcommand{\role}[1]{%
+    {\itshape #1}%
+}
+
+% Bullet lists.
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.08cm,
+        parsep=0.06cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+}
+
+% One- and two-column entry environments.
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0.00001cm}{0.00001cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill,4cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn
+    \raggedleft
+    \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+% Header environment.
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}
+    \par\kern\topsep
+    \centering
+    \linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+% Numbered publication entry. The struts align the number with the first line.
+\newcounter{pubnum}
+
+\newcommand{\publication}[4]{%
+    \refstepcounter{pubnum}%
+    \par\noindent
+    \makebox[0.065\linewidth][l]{%
+        \strut\textbf{[\thepubnum]}%
+    }%
+    \parbox[t]{0.935\linewidth}{%
+        \strut #1. \textquotedbl#2\textquotedbl\ #3\ #4%
+    }%
+    \par\vspace{0.18cm}%
+}
+
+\begin{document}
+
+% Header
+\begin{header}
+    \fontsize{25pt}{25pt}\selectfont\textsc{Haolei Bai}
+
+    \vspace{5pt}
+
+    \normalsize
+    \mbox{%
+        \faEnvelope\ \href{mailto:hb6892@rit.edu}{hb6892@rit.edu}
+        \,\textbar\,
+        \aiGoogleScholar\ \href{https://scholar.google.com/citations?user=CGh99DUAAAAJ\&hl=en}{\textsc{Haolei Bai}}
+        \,\textbar\,
+        \faGlobe\ \href{https://deadlykitten4.github.io/}{deadlykitten4.github.io}
+    }
+\end{header}
+
+\vspace{5pt-0.3cm}
+
+% Education
+\section{Education}
+
+\begin{twocolentry}{
+    \entrydate{Aug. 2026 -- Present}
+}
+    \institution{Rochester Institute of Technology}, Rochester, NY, USA
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\hspace{0.10cm}%
+Ph.D. in Computing and Information Sciences
+\quad
+\advisor{Prof. \href{https://scholar.google.com/citations?user=sEKglOkAAAAJ\&hl=en}{Zhiqiang Tao}}
+
+\vspace{0.18cm}
+
+\begin{twocolentry}{
+    \entrydate{Aug. 2023 -- Feb. 2025}
+}
+    \institution{Nanyang Technological University}, Singapore
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\hspace{0.10cm}%
+Master of Science in Signal Processing
+\quad
+\advisor{Prof. \href{https://scholar.google.com/citations?user=UGZXLxIAAAAJ\&hl=en}{Alex Kot}}
+
+\vspace{0.18cm}
+
+\begin{twocolentry}{
+    \entrydate{Sep. 2019 -- Jun. 2023}
+}
+    \institution{Qingdao University of Technology}, Qingdao, China
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\hspace{0.10cm}%
+Bachelor of Engineering in Communication Engineering
+
+% Research profile
+\section{Research Profile}
+
+\begin{onecolentry}
+    Ph.D. student in Computing and Information Sciences at Rochester Institute of Technology,
+    focusing on efficient and reliable autonomous driving. My research explores adaptive
+    computation, model compression, and robustness under out-of-distribution conditions.
+    My prior work includes diffusion-LLM-based CUDA kernel generation and error-controlled
+    LLM compression.
+\end{onecolentry}
+
+% Research experience
+\section{Research Experience}
+
+\begin{twocolentry}{
+    \entrydate{Jan. 2025 -- Sep. 2026}
+}
+    \institution{Westlake University}, Hangzhou, China
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{
+    \advisor{\href{https://scholar.google.com/citations?user=0-On0y4AAAAJ\&hl=en}{Huan Wang}}
+}
+    \role{Research Intern}, ENCODE Lab
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed DICE, a family of diffusion large language models (dLLMs) for CUDA kernel generation
+        \item Designed ERC-SVD, an error-controlled SVD method for compressing large language models
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.18cm}
+
+\begin{twocolentry}{
+    \entrydate{May 2024 -- Nov. 2024}
+}
+    \institution{Agency for Science, Technology and Research (A*STAR)}, Singapore
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{
+    \advisor{\href{https://scholar.google.com/citations?user=nRknP8UAAAAJ\&hl=en}{Ming Yan}}
+}
+    \role{Research Intern}, Centre for Frontier AI Research
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{onecolentry}
+    \begin{highlights}
+        \item Investigated open-source LLMs for extracting structured events from unstructured documents
+        \item Explored chain-of-thought prompting and multi-turn dialogue strategies for improving event extraction accuracy
+    \end{highlights}
+\end{onecolentry}
+
+% Publications
+\section{Publications}
+
+\setcounter{pubnum}{0}
+
+\begin{onecolentry}
+    {\small
+        \textsuperscript{*} Equal contribution.
+        \quad
+        \textsuperscript{\dag} Corresponding author.
+    }
+\end{onecolentry}
+
+\vspace{0.08cm}
+
+\publication
+{\textbf{Haolei Bai}, Jiamian Wang, Meibo Hu, Ying Li, Yi Xu,
+Zhiqiang Tao, and Huan Wang\textsuperscript{\dag}}
+{Route and Recover: Dynamic Routing with Self On-Policy Distillation
+for Efficient Autonomous Driving.}
+{\textit{Under Review}.}
+{}
+
+\publication
+{\textbf{Haolei Bai}, Lingcheng Kong, Xueyi Chen, Jiamian Wang,
+Zhiqiang Tao, and Huan Wang\textsuperscript{\dag}}
+{DICE: Diffusion Large Language Models Excel at Generating CUDA Kernels.}
+{\textit{Under Review}.}
+{
+    \href{https://arxiv.org/abs/2602.11715}{\textbf{[Paper]}}
+    \href{https://huggingface.co/collections/DeadlyKitt3n/dice}{\textbf{[Model Family]}}
+    \href{https://deadlykitten4.github.io/DICE/}{\textbf{[Project Page]}}
+}
+
+\publication
+{\textbf{Haolei Bai}, Siyong Jian, Tuo Liang, Yu Yin,
+and Huan Wang\textsuperscript{\dag}}
+{ERC-SVD: Error-Controlled SVD for Large Language Model Compression.}
+{In \textit{CPAL}, 2026.}
+{
+    \href{https://arxiv.org/abs/2505.20112}{\textbf{[Paper]}}
+    \href{https://deadlykitten4.github.io/ERC-SVD/}{\textbf{[Project Page]}}
+}
+
+\publication
+{Xueyi Chen\textsuperscript{*}, Shiyu Liu\textsuperscript{*},
+Xin Jin, Yuhua Zheng, Xin Li, \textbf{Haolei Bai}, Junhan Zhu,
+and Huan Wang\textsuperscript{\dag}}
+{\mbox{MetaKernelBench:} Measuring GPU Kernel Knowledge Transfer Beyond Code.}
+{\textit{Under Review}.}
+{
+    \href{https://arxiv.org/abs/2610.05014}{\textbf{[Paper]}}
+    \href{https://yige24.github.io/MetaKernelBench/}{\textbf{[Project Page]}}
+}
+
+\publication
+{Xingze Zou\textsuperscript{*}, Jing Wang\textsuperscript{*},
+Yuhua Zheng, Xueyi Chen, \textbf{Haolei Bai}, Lingcheng Kong,
+Syed A. R. Abu-Bakar, Zhaode Wang, Chengfei Lv,
+Haoji Hu\textsuperscript{\dag}, and Huan Wang\textsuperscript{\dag}}
+{MobileKernelBench: Can LLMs Write Efficient Kernels for Mobile Devices?}
+{\textit{Under Review}.}
+{
+    \href{https://arxiv.org/abs/2603.11935}{\textbf{[Paper]}}
+    \href{https://huggingface.co/datasets/Jhnony/Mobilekernelbench}{\textbf{[Dataset]}}
+    \href{https://zeezou-isee.github.io/Mobilekernelbench/}{\textbf{[Project Page]}}
+}
+
+% Technical skills
+\section{Technical Skills}
+
+\begin{onecolentry}
+    \textbf{Programming:} Python, C/C++, CUDA
+    \qquad
+    \textbf{Frameworks and Systems:} PyTorch, Linux
+\end{onecolentry}
+
+% Scholarships and awards
+\section{Scholarships \& Awards}
+
+\begin{twocolentry}{\entrydate{2024}}
+    CFAR Internship Award for Research Excellence (CIARE)
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{\entrydate{2019--2023}}
+    Excellent Student Scholarship
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{\entrydate{2022}}
+    National Encouragement Scholarship
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{\entrydate{2021}}
+    Third Prize, \textquotedbl iCAN\textquotedbl\ National College Student Innovation and Entrepreneurship Competition
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{\entrydate{2021}}
+    Second Prize, National College Student Electronic Design Competition
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{\entrydate{2021}}
+    First Prize, 14th China College Students' Computer Design Competition of Shandong Province
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{\entrydate{2021}}
+    Second Prize, Shandong Provincial College Student SCM Application and Design Innovation Competition
+\end{twocolentry}
+
+\vspace{0.08cm}
+
+\begin{twocolentry}{\entrydate{2020}}
+    Third Prize, 11th Provincial College Students' Mathematics Competition
+\end{twocolentry}
+
+\end{document}

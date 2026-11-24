@@ -1,0 +1,49 @@
+                                                     HAOLEI BAI
+                                   ćhb6892@rit.edu |  HAOLEI BAI | ç deadlykitten4.github.io
+            Education
+             Rochester Institute of Technology, Rochester, USA                                        Aug.2026 - Present
+              Ph.D. in Computing and Information Sciences, Advisor: Prof. Zhiqiang Tao
+             NanyangTechnological University, Singapore                                             Aug.2023 - Feb.2025
+              Master of Science in Signal Processing, Advisor: Prof. Alex Kot
+             Qingdao University of Technology, Qingdao, China                                       Sep.2019 - Jun.2023
+              Bachelor of Engineering in Communication Engineering
+            Research Interests
+             Myresearch focuses on building efﬁcient and reliable autonomous driving systems. I am particularly interested in
+             adaptive computation, including dynamic routing and layer skipping, and model compression for resource-efﬁcient
+             deployment. I am exploring robustness and generalization under out-of-distribution driving conditions.
+            Internship
+             Westlake University, Hangzhou, China                                                   Jan.2025 - Sep.2026
+             ENCODELab                                                                               Advisor: Huan Wang
+              • Developed DICE, a series of dLLMs for CUDA kernel generation
+              • Designed ERC-SVD, an error-controlled SVD method for compressing LLMs
+             Agency for Science, Technology and Research, Singapore                                 May.2024 - Nov.2024
+             Centre for Frontier AI Research                                                           Advisor: Ming Yan
+              • Investigated the use of open-source LLMs for extracting structured events from unstructured documents
+              • Exploredchain-of-thoughtpromptingandmulti-turndialoguestrategiesforimprovingeventextractionaccuracy
+            Publications
+             Route and Recover: Dynamic Routing with Self On-Policy Distillation for Efﬁcient              Under Review
+             AutonomousDriving
+             Haolei Bai, Jiamian Wang, Meibo Hu, Ying Li, Yi Xu, Zhiqiang Tao, Huan Wang†
+             DICE: Diffusion Large Language Models Excel at Generating CUDA Kernels                        Under Review
+             Haolei Bai, Lingcheng Kong, Xueyi Chen, Jianmian Wang, Zhiqiang Tao, Huan Wang†
+             [Paper] [Model Family] [Project Page]
+             ERC-SVD: Error-Controlled SVD for Large Language Model Compression                                 CPAL’26
+             Haolei Bai, Siyong Jian, Tuo Liang, Yu Yin, Huan Wang†
+             [Paper] [Project Page]
+             MetaKernelBench: Measuring GPU Kernel Knowledge Transfer Beyond Code                          Under Review
+             Xueyi Chen*, Shiyu Liu*, Xin Jin, Yuhua Zheng, Xin Li, Haolei Bai, Junhan Zhu, Huan Wang†
+             [Paper] [Project Page]
+             MobileKernelBench: Can LLMs Write Efﬁcient Kernels for Mobile Devices?                        Under Review
+                       *           *
+             Xingze Zou , Jing Wang , Yuhua Zheng, Xueyi Chen, Haolei Bai, Lingcheng Kong, Syed A.R. Abu-Bakar,
+             Zhaode Wang, Chengfei Lv, Haoji Hu†, Huan Wang†
+             [Paper] [Dataset] [Project Page]
+            Scholarships & Awards
+             CFARInternship Award for Research Excellence (CIARE)                                                 2024
+             Excellent Student Scholarship                                                                 2019-2023
+             National Scholarship for Encouragement                                                               2022
+             Third Prize, "iCAN" National College Student Innovation and Entrepreneurship Competition             2021
+             Second Prize, The National College Student Electronic Design Competition                             2021
+             First Prize, 14th China College Students Computer Design Competition of Shandong Province            2021
+             Second Prize, Shandong Provincial College Student SCM Application and Design Innovation Competition  2021
+             Third Prize, 11th Provincial College Students Mathematics Competition                                2020
