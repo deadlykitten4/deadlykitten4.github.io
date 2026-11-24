@@ -18,8 +18,8 @@
           <tr>
             <th scope="row" style="width: 20%">
               {%- assign start_date = item.start_date | default: item.date -%}
-              {%- assign end_raw   = item.end_date | default: nil        -%}
-              {%- assign end_lc    = end_raw | downcase                  -%}
+              {%- assign end_raw = item.end_date | default: null -%}
+              {%- assign end_lc = end_raw | downcase -%}
 
               {{ start_date | date: '%b %d, %Y' }}
               {%- if end_raw %}
